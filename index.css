@@ -1,0 +1,25 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(40, 40, 40);
+    color:white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 100px;
+}
+textarea{
+    height: 100px;
+    padding: 10px;
+    font-size: large;
+}
+button{
+    border: none;
+    outline: none;
+    background: greenyellow;
+    font-size: x-large;
+    padding: 10px 0;
+}

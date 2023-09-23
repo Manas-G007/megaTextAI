@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <main> 
+        <h1>Get simple text from complex data</h1>
+        <textarea type="text" id="userText" placeholder="Enter document text"></textarea>
+        <br>
+        <button id="btn">Get simple text</button>
+        <br>
+        <textarea type="text" name="" id="aiText" placeholder="Ai simple text"></textarea>
+    </main>
+   
+   
+
+    <script src="main.js"></script>
+    <script>
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",async ()=>{
+            try{
+                let ans=await getSimpleText(userText.value);
+                // console.log(ans.rewritten);
+                aiText.value=ans.rewritten;
+            }catch(e){
+                console.log("error");
+            }
+        })
+    </script>
+</body>
+</html>
