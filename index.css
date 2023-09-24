@@ -23,7 +23,7 @@ button{
     font-size: x-large;
     padding: 10px 0;
 }
-@media-screen and (max-width:500px){
+@media screen and (max-width:500px){
 main{
 padding:0 10px;
 }
